@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'Chistoso';
+    src: url('../fonts/Chistoso-Regular.ttf');
+  }
+
+
+/*-------------VERSION MOVIL------------*/
+main section#descripcion {
+    background-image: url('../imagenes/banner.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 2rem 0;
+    transition: background-image 2s;
+}
+
+main section#descripcion h2:hover {
+    color: black;    
+}
+  
+main section#descripcion:hover {
+    background-image: url('../imagenes/banner2.jpg');
+    
+}
+
+main section#descripcion h2 {
+    letter-spacing: 0.2rem;
+    font-family: 'Chistoso' , 'Arial';
+    font-size: 2rem;
+    color: whitesmoke;
+    text-align: center;
+    transition: color 0.5s;
+
+
+}
+main section#fotoGrupo {
+    padding-top: 1.5rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+main section#fotoGrupo img:nth-child(3) {
+    display: none;
+}
+
+main section#fotoGrupo img {
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    width:90%;
+    height: 100%;
+}
+
+/*----- VERSION TABLET------------------*/
+@media screen and (min-width:768px) {
+    main section#fotoGrupo img:nth-child(3) {
+        display: flex;
+    }
+
+    main section#fotoGrupo img {
+        width: 550px;
+        height: 350px;
+    }
+    
+}
+
+
+  /*-------------VERSION ESCRITORIO------------*/
+  @media (min-width: 992px) {
+    main {
+   display: flex;
+   flex-flow: column nowrap;
+}
+
+main section#descripcion {
+    background-image: url('../imagenes/banner.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 2.5rem 2rem;
+}
+
+main section#descripcion h2 {
+    letter-spacing: 0.8rem;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    margin-top: 1.5rem; 
+}
+
+main section#fotoGrupo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+main section#fotoGrupo img {
+    width: 650px;
+    height: 450px;
+    margin: 2rem;
+    opacity: 0.2;
+}
+
+main section#fotoGrupo img:hover {
+    opacity: 1;
+    border: 3px solid white;
+}
+
+  }
