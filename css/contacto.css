@@ -1,0 +1,27 @@
+/*-----VERSION MOVIL ------*/
+main section#contacto form {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 75%;
+  margin: 3rem auto;
+}
+
+main section#contacto form input {
+  height: 2rem;
+  margin: 0.5rem 0;
+  text-align: center;
+  border-radius: 0.8rem;
+}
+
+main section#contacto form input[type="submit"],
+main section#contacto form input[type="reset"] {
+  width: 49.8%;
+}
+
+/*-----VERSION ESCRITORIO ------*/
+@media (min-width: 992px) {
+  main section#contacto form input {
+    font-size: 1.5rem;
+    height: 5rem;
+  }
+}

@@ -1,10 +1,9 @@
-
 @font-face {
-  font-family: 'Hamston';
-  src: url('../fonts/Hamston.ttf');
+  font-family: "Hamston";
+  src: url("../fonts/Hamston.ttf");
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -42,17 +41,17 @@ footer {
 footer section#privacidad {
   display: flex;
   align-items: center;
-  justify-content: flex-start ;
+  justify-content: flex-start;
   font-style: italic;
   color: white;
-  width:80%; 
+  width: 80%;
   font-size: 0.8rem;
 }
 footer section#redes div {
   display: flex;
 }
 
-footer section#redes div i{
+footer section#redes div i {
   color: white;
   margin-right: 1rem;
 }
@@ -67,7 +66,7 @@ header .menu-h button {
   margin-left: 1rem;
   background-color: #505050;
 }
-header .main-header{
+header .main-header {
   height: 50px;
   display: flex;
   justify-content: space-between;
@@ -90,32 +89,30 @@ header nav ul li a:hover {
   color: red;
 }
 
-
-header .main-logo{
+header .main-logo {
   color: black;
-  font-size:32px;
-  text-decoration:none;
-  
+  font-size: 32px;
+  text-decoration: none;
 }
 
-header .main-nav{
+header .main-nav {
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100%;
   margin-left: -100%;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
   background-color: black;
   z-index: 100;
 }
 
-header .main-nav.show{
+header .main-nav.show {
   margin-left: 0;
 }
 
-.nav-links{
-  background-color: rgb(250,250,250);
+.nav-links {
+  background-color: rgb(250, 250, 250);
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -124,7 +121,7 @@ header .main-nav.show{
   justify-content: flex-start;
 }
 
-.link-item{
+.link-item {
   margin-top: 2rem;
   color: #444444;
   text-decoration: none;
@@ -147,7 +144,7 @@ header .main-nav.show{
   width: 100%;
 }
 
-.button-menu{
+.button-menu {
   z-index: 200;
   width: 40px;
   height: 40px;
@@ -160,7 +157,7 @@ header .main-nav.show{
   cursor: pointer;
 }
 
-.button-menu span{
+.button-menu span {
   width: 37px;
   height: 4px;
   margin-bottom: 5px;
@@ -168,7 +165,7 @@ header .main-nav.show{
   background: #444444;
   border-radius: 3px;
   transform-origin: 4px 0px;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 header .button-menu.close span {
@@ -177,38 +174,33 @@ header .button-menu.close span {
   background: #ffffff;
 }
 
-.button-menu.close span:nth-child(2){
+.button-menu.close span:nth-child(2) {
   transform: rotate(-45deg) translate(-8px, 5px);
 }
 
-header .button-menu.close span:nth-child(3){
+header .button-menu.close span:nth-child(3) {
   display: none;
 }
 /*-----FIN NAV MOVIL------------------*/
 
-
-
-
 /*----- VERSION TABLET------------------*/
-@media screen and (min-width:768px) {
-  
-  .button-menu{
+@media screen and (min-width: 768px) {
+  .button-menu {
     display: none;
   }
 
-
-  .main-logo{
+  .main-logo {
     flex-basis: 30%;
   }
 
-  .main-nav{
+  .main-nav {
     position: static;
     margin-left: 0;
     flex-basis: 70%;
     height: 100%;
   }
 
-  .nav-links{
+  .nav-links {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -217,7 +209,7 @@ header .button-menu.close span:nth-child(3){
     background: white;
   }
 
-  .link-item{
+  .link-item {
     display: inline-block;
     margin-top: 0;
     margin-right: 2rem;
@@ -228,58 +220,53 @@ header .button-menu.close span:nth-child(3){
   }
 }
 
-
- /* VERSION de PC */
- @media (min-width: 992px) {
-
-   header div.menu-h{
+/* VERSION de PC */
+@media (min-width: 992px) {
+  header div.menu-h {
     display: none;
   }
 
-   div.menuPc{
-    background-image: url('../imagenes/bgnav.jpg');
-     display: flex;
-     height: 100px;
+  div.menuPc {
+    background-image: url("../imagenes/bgnav.jpg");
+    display: flex;
+    height: 100px;
   }
 
   div.menuPc ul {
     align-items: center;
     display: flex;
- }
+  }
 
- div.menuPc ul li{
-  list-style: none;
+  div.menuPc ul li {
+    list-style: none;
+  }
+
+  div.menuPc ul li {
+    margin-right: 6rem;
+  }
+
+  div.menuPc ul li a {
+    font-family: "Hamston", Arial;
+    color: white;
+    font-size: 3.5rem;
+    display: block;
+  }
+
+  div.menuPc ul li:nth-child(6) a {
+    margin-left: 7.5rem;
+  }
+
+  div.menuPc ul li:not(:first-of-type) a:hover {
+    padding: 0.8rem;
+    border-radius: 1rem;
+  }
+  /*----LOGO NAV PC -----*/
+  div.menuPc ul li a img {
+    width: 150px;
+    height: 110px;
+  }
+
+  div.menuPc ul li a:hover {
+    color: red;
+  }
 }
-
-div.menuPc ul li{
-  margin-right: 6rem;
-}
-
-div.menuPc ul li a{
-  font-family: 'Hamston', Arial;
-  color: white;
-  font-size: 3.5rem;
-  display: block;
-}
-
-div.menuPc ul li:nth-child(6) a{
-  margin-left: 7.5rem;
-}
-
-
-div.menuPc ul li:not(:first-of-type) a:hover{
- padding: 0.8rem;
- border-radius: 1rem;
-}
-/*----LOGO NAV PC -----*/
-div.menuPc ul li a img{
-  width: 150px;
-  height: 110px;
-}
-
-div.menuPc ul li a:hover{
-  color: red;
-}
-
-
- }

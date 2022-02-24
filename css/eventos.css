@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+
+/*-----VERSION MOVIL ------*/
+main section#eventos {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main section#bannerEvento {
+  width: 100%;
+  display: flex;
+  background-image: url("../imagenes/bannerEvento.jpg");
+}
+
+main section#bannerEvento a {
+  animation: moverHorizontal ease 10s backwards;
+  animation-iteration-count: infinite;
+  font-size: 1.3rem;
+  font-family: "Bangers", "Arial";
+  margin: 0 auto;
+  padding: 0.5rem;
+  color: white;
+}
+
+@keyframes moverHorizontal {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+main section#eventos img {
+  margin: 1rem auto;
+  width: 250px;
+  height: 350px;
+}
+
+/*----- VERSION TABLET------------------*/
+@media screen and (min-width: 768px) {
+  main section#eventos img {
+    width: 500px;
+    height: 650px;
+  }
+  main section#bannerEvento a {
+    font-size: 2.5rem;
+    letter-spacing: 8px;
+  }
+}
+
+/*-----VERSION ESCRITORIO ------*/
+@media (min-width: 992px) {
+  main section#eventos {
+    display: grid;
+    grid-template-areas: "img img img";
+    padding: 2rem;
+  }
+  main section#bannerEvento a {
+    letter-spacing: 10px;
+  }
+  main section#eventos img {
+    grid-area: "img";
+    width: 500px;
+    height: 650px;
+    padding-bottom: 10rem;
+    opacity: 0.6;
+  }
+
+  main section#eventos img:hover {
+    opacity: 1;
+  }
+}

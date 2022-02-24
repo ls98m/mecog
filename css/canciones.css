@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Hamston";
+  src: url("../fonts/Hamston.ttf");
+}
+/*-----VERSION MOVIL ------*/
+main section#canciones {
+  width: 100%;
+  margin: 2rem auto;
+  display: table;
+}
+
+main section#canciones > div.cancion {
+  display: table-row;
+  background-color: #242424;
+}
+
+main section#canciones div h1 {
+  color: white;
+  font-family: "Arial";
+  font-size: 1rem;
+  letter-spacing: 1px;
+  display: table-cell;
+  width: 80%;
+  padding-left: 2.5rem;
+}
+main section#canciones div.cancion h1:hover {
+  color: red;
+}
+
+main section#canciones div div i {
+  margin: 0 0.2rem;
+  color: white;
+}
+
+/*-----VERSION ESCRITORIO ------*/
+@media (min-width: 992px) {
+  main section#canciones {
+    background-color: #242424;
+    padding: 10% 25%;
+  }
+
+  main section#canciones div.cancion h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    width: 30%;
+  }
+  main section#canciones div.cancion div {
+    font-size: 2rem;
+  }
+}

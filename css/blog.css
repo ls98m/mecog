@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
+/*-----VERSION MOVIL ------*/
+main section#publicar form {
+  width: 80%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 1rem auto;
+}
+
+main section#publicar form input#txtComentario {
+  background-color: black;
+  height: 70px;
+  border-radius: 0.7rem;
+  border: 1px solid white;
+  color: white;
+}
+
+main section#publicar form input[type="submit"] {
+  margin-top: 0.5rem;
+  width: 20%;
+  border-radius: 0.4rem;
+  margin-left: 80%;
+}
+
+main section#publicaciones {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+main section#publicaciones section {
+  border-bottom: 1px solid white;
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+main section#publicaciones section * {
+  margin-left: 1rem;
+  color: white;
+  font-family: "ZCOOL QingKe HuangYou", "Arial";
+}
+
+/*----- VERSION TABLET------------------*/
+@media screen and (min-width: 768px) {
+}
+
+/*-----VERSION ESCRITORIO ------*/
+@media (min-width: 992px) {
+  main section#publicaciones section * {
+    margin-left: 6rem;
+    font-size: 1.5rem;
+  }
+
+  main section#publicar form input[type="submit"] {
+    width: 10%;
+    height: 30px;
+    margin-left: 90%;
+  }
+}
